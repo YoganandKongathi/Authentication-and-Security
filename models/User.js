@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
 })
 
 const secret = "Thisisourlittlesecret."
-userSchema.plugin(encrypt, {secret: secret, encryptedFields: ['password'] })
+userSchema.plugin(encrypt, {secret: secrete, encryptedFields: ['password'] })
 
 const User = model('User', userSchema)
 
